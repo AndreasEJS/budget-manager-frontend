@@ -1,7 +1,7 @@
 import axios from 'axios';  
 
 const apiClient = axios.create({
-    baseURL: 'https://localhost:7182/api',
+    baseURL: process.env.REACT_APP_API_URL, // Dynamisk URL från .env
     headers: {
         'Content-Type': 'application/json'
     },

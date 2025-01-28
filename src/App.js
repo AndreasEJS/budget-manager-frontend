@@ -9,6 +9,7 @@ import { fetchTransactions, updateTransaction, deleteTransaction } from './servi
 function App() {
     const [transactions, setTransactions] = useState([]);
     const [refreshKey, setRefreshKey] = useState(0);
+    
 
     const fetchAllTransactions = async () => {
         const data = await fetchTransactions();

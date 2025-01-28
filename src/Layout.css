@@ -1,0 +1,328 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+}
+
+    .flex-container .column {
+        flex: 1;
+        background-color: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+.section {
+    margin-top: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    table th {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    table th {
+        background-color: #f2f2f2;
+    }
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+/* Header-styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Flex-container styling */
+.flex-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.column {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section styling */
+.section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Knappar */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+/* Transaction History Styling */
+.transaction-history {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .transaction-history ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+        .transaction-history ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            font-weight: 500;
+            font-size: 16px;
+            color: #333;
+        }
+
+    .transaction-history li:last-child {
+        border-bottom: none;
+    }
+
+.transaction-title {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.transaction-amount {
+    color: red; /* För negativa belopp */
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+    .transaction-amount.positive {
+        color: green; /* För positiva belopp */
+    }
+
+.transaction-date {
+    color: #666;
+    font-style: italic;
+}
+
+/* Category Summary */
+.category-summary ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.category-summary li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.category-summary .category-name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.category-summary .category-amount {
+    font-size: 16px;
+}
+
+    .category-summary .category-amount.positive {
+        color: green;
+    }
+
+    .category-summary .category-amount.negative {
+        color: red;
+    }
+
+.category-summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+    .category-row:last-child {
+        border-bottom: none;
+    }
+
+.category-name {
+    flex: 1;
+    font-weight: bold;
+}
+
+.category-amount {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+    .category-amount.positive {
+        color: green;
+    }
+
+    .category-amount.negative {
+        color: red;
+    }
+
+.category-percentage {
+    flex: 1;
+    text-align: right;
+    color: #666;
+    font-style: italic;
+}
+
+.transaction-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Justera detaljer i transaktionerna */
+.transaction-details {
+    flex: 1;
+    display: flex;
+    gap: 20px; /* Ger mellanrum mellan titel, belopp och datum */
+    align-items: center; /* Justerar vertikalt */
+}
+
+/* Mellanrum mellan knappar */
+.transaction-actions {
+    display: flex;
+    gap: 10px; /* Ger mellanrum mellan Edit och Delete */
+}
+
+    .transaction-actions button {
+        padding: 5px 10px;
+        font-size: 14px;
+        margin-right: 10px; /* Mellanrum mellan Save och Cancel */
+    }
+
+/* Formulär för att lägga till transaktioner */
+.add-transaction-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .add-transaction-form h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #333;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .form-group input,
+    .form-group select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+        .form-group input::placeholder {
+            color: #aaa;
+            font-style: italic;
+        }
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+    .submit-button:hover {
+        background-color: #45a049;
+    }

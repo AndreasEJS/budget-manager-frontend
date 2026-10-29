@@ -1,0 +1,10 @@
+import assert from "node:assert";
+import { detectStock } from "./monitor.mjs";
+const ld = (a) => `<script type="application/ld+json">{"offers":{"availability":"https://schema.org/${a}"}}</script>`;
+assert.equal(detectStock(ld("InStock"), {}), true);
+assert.equal(detectStock(ld("OutOfStock"), {}), false);
+assert.equal(detectStock(ld("SoldOut"), {}), false);
+assert.equal(detectStock("<html>inget</html>", {}), null);
+assert.equal(detectStock("Tillfälligt slut", { outOfStockRegex: "slut" }), false);
+assert.equal(detectStock("Lägg i varukorg", { outOfStockRegex: "slut", inStockRegex: "varukorg" }), true);
+console.log("detectStock: OK");

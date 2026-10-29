@@ -1,0 +1,8 @@
+{
+  "ntfyTopic": "byt-ut-mig-mot-ett-långt-hemligt-namn",
+  "intervalSeconds": 300,
+  "sites": [
+    { "name": "Butik 1", "url": "KLISTRA-IN-PRODUKTLÄNK-TILL-PS5-PRO" },
+    { "name": "Butik 2 (egna regex)", "url": "KLISTRA-IN-PRODUKTLÄNK", "outOfStockRegex": "slut i lager|tillfälligt slut", "inStockRegex": "lägg i varukorg" }
+  ]
+}
